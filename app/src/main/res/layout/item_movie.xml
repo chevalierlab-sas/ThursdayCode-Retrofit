@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_poster"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Judul Movie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_toEndOf="@id/img_poster"
+                android:layout_marginStart="8dp"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@tools:sample/lorem/random"
+                android:layout_toEndOf="@id/img_poster"
+                android:layout_below="@id/tv_title"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:maxLines="6"
+                android:ellipsize="end"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
